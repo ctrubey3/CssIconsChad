@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+
+nav {
+  background-color: lightblue;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.navWrapper {
+  align-items: center;
+  position: fixed;
+  top: 25px;
+  right: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  background-color: dimgrey;
+}
+.dropDown {
+  height: 20px;
+  width: 100px;
+  background-color: orange;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+.toggle {
+  display: none;
+}
+a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+}
+@media screen and (min-width: 600px) {
+  .dropDown {
+    display: none;
+  }
+  .navWrapper {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    flex-direction: row;
+    top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
